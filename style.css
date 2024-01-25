@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1em;
+    padding-left: 9em;
+}
+
+main {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 1em;
+}
+
+article {
+    padding-left: 5em;
+}
+article section {
+    width: 90%;
+    padding-top: 0.25em;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.project {
+    position: relative;
+    text-align: center;
+    min-height: 15em;
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project:hover .overlay {
+    opacity: 1.0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+section div {
+    padding-top: 0.5em;
+}
+
+.collapsible {
+    width: 100%;
+    height: 1.8em;
+    background: lightgray;
+    outline: none;
+    text-align: left;
+    border: none;
+    font-size: 1.3em;
+    padding-left: 3em;
+}
+
+.activedropdown, .collapsible:hover {
+    background: darkgray;
+}
+
+aside h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+aside img {
+    border-radius: 50%;
+    width: 90%;
+    height: auto;
+    padding-left: 10%;
+}
+
+aside p {
+    font-size: 1.5em;
+}
+
+footer {
+    padding: 1em;
+}
+footer p {
+    text-align: center;
+}
+
+
+@media (max-width: 45em) {
+
+    header {
+        padding: 1em;
+    }
+    header h1 {
+        text-align: center;
+    }
+
+    main {
+        display: block;
+    }
+    article {
+        padding-left: 0;
+    }
+    
+    article section {
+        width: 100%;
+    }
+}
