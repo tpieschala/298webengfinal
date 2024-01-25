@@ -18,22 +18,25 @@ main {
 article {
     padding-left: 5em;
 }
+
 article section {
-    width: 90%;
     padding-top: 0.25em;
+    padding-right: 5em;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(max(15em, 29%), 1fr));
     grid-gap: 1em;
-    padding: 1em;
 }
 
 .project {
     position: relative;
     text-align: center;
     min-height: 15em;
+    padding: 1em;
+    border-radius: 5%;
+    background: rgb(228, 228, 228);
 }
 
 .project img {
@@ -56,7 +59,8 @@ article section {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: white;
+    background: rgb(228, 228, 228);
+    border-radius: 5%;
 }
 
 section div {
@@ -71,7 +75,8 @@ section div {
     text-align: left;
     border: none;
     font-size: 1.3em;
-    padding-left: 3em;
+    padding-left: 2em;
+    border-radius: 5px;
 }
 
 .activedropdown, .collapsible:hover {
@@ -79,15 +84,18 @@ section div {
 }
 
 aside h2 {
+    font-size: 2.8em;
     text-align: center;
-    font-size: 2em;
 }
 
 aside img {
-    border-radius: 50%;
-    width: 90%;
+    border-radius: 100%;
+    width: 18em;
     height: auto;
-    padding-left: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 aside p {
